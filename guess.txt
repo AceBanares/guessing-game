@@ -1,0 +1,6 @@
+PSEUDOCODE
+
+1. Set number as num to be between 1-100
+2. Get a guess from the user
+3. If guess is correct, game is done, let the user know and go back to step 1
+4. If guess is lower or higher, let the user know and go back to step 2
