@@ -37,10 +37,11 @@
       guessBox.focus();
 
       // STEP 3: Build a function to check the user's guess
+      var lastGuess;
+
       function checkGuess() {
         // STEP 3a: Create a variable to contain what number the user entered
         var guess = guessBox.value;
-        var lastGuess;
 
         // STEP 3b: If this is the first guess, add some text to the screen as a label for listing previous guesses for reference
         if(guessCount == 1) {
@@ -49,11 +50,10 @@
         // STEP 3c: Add the user's current guess to that list, plus a space
         else {
           guesses.textContent += ", " + guess;
-          lastResult = "this";
+          lastResult.textContent = "Your last guess is " + lastGuess
         }
 
         lastGuess = guess;
-
         // STEP 3d: Conditional - the user guessed correctly
         if(guess == num) {
           result.textContent = 'GAME OVER: You got the number!';
