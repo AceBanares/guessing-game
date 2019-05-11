@@ -44,9 +44,6 @@
 			var input = prompt('please enter your name');
 			// STEP 4b: Grab the input from the variable and build a new string, then change the text inside the EM element
 			em.textContent = "professor " + input;
-			if(input == "guess") {
-				window.location.href += "guess.html"
-			}
 		}
 
 		// STEP 5: Comment out the addEventListener above, and replace it with an ONCLICK attribute typed directly into the EM element in the HTML - note that this is common, but it is considered to be bad practice - separate your HTML and your JS
